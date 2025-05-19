@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Book a Service | TrueBlue Carpet Cleaning</title>
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Book a Service</h1>
+    <form action="https://formsubmit.co/carpetcleaningtrueblue@gmail.com" method="POST">
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_template" value="box">
+  <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you.html">
+
+  <label for="name">Full Name</label>
+  <input type="text" id="name" name="name" required />
+
+  <label for="email">Email</label>
+  <input type="email" id="email" name="email" required />
+
+  <label for="phone">Phone Number</label>
+  <input type="tel" id="phone" name="phone" required />
+
+  <label for="service">Select a Service</label>
+  <select id="service" name="service" required>
+    <option value="">--Choose--</option>
+    <option value="basic">Basic Carpet Cleaning</option>
+    <option value="basic">Deep Carpet Cleaning</option>
+    <option value="basic">Basic Upholstery Cleaning</option>
+    <option value="deep">Deep Upholstery Cleaning</option>
+    <option value="basic">Basic Auto Interior Cleaning</option>
+    <option value="basic">Deep Auto Interior Cleaning</option>
+    <option value="basic">*Move Out Special*</option>
+
+  </select>
+
+  <label for="date">Preferred Date</label>
+  <input type="date" id="date" name="date" required />
+
+  <label for="time">Preferred Time</label>
+  <input type="time" id="time" name="time" required />
+
+  <label for="notes">Additional Notes</label>
+  <textarea id="notes" name="notes" rows="4"></textarea>
+
+  <button type="submit">Submit Booking</button>
+</form>
+
+    <p id="formMessage"></p>
+  </div>
+  <script src="app.js"></script>
+  <!-- Ensure that 'app.js' exists in the same directory as this HTML file -->
+</body>
+</html>

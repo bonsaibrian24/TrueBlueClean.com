@@ -1,0 +1,70 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f0f8ff; /* Light baby blue background */
+  margin: 0;
+  padding: 20px;
+  color: #333;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+  background: #ffffff; /* White container */
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 102, 204, 0.1); /* Soft baby blue shadow */
+}
+
+h1 {
+  text-align: center;
+  color: #007bc1; /* TrueBlue baby blue */
+  margin-bottom: 1rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 1rem;
+  font-weight: 600;
+  color: #005f8c;
+}
+
+input, select, textarea {
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #cce7f5;
+  margin-top: 5px;
+  background-color: #f9fcff;
+  transition: border 0.3s ease;
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  border: 1px solid #66c0f4;
+}
+
+button {
+  margin-top: 1.5rem;
+  padding: 12px;
+  background-color: #00aaff;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #007bc1;
+}
+
+#formMessage {
+  margin-top: 1rem;
+  text-align: center;
+  color: green;
+  font-weight: bold;
+}
